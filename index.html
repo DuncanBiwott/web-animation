@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Developmemnt Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Beuty Parlour System</h1>
+        <button id="menuBtn">&#9776;</button>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#bmi">BMI</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="slideshow">
+            <section id="home">
+            <div class="fade-in-1">
+                <div class="content">
+                    <h2>Beauty Parlour System</h2>     
+                    <p>Experience the ultimate relaxation and rejuvenation with our luxurious spa treatments and services. Our team of skilled professionals is dedicated to providing you with an unforgettable experience that will leave you feeling refreshed and revitalized.</p>
+
+                </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="wrap">
+            <section id="bmi">
+            <div class="fade-in">
+            
+            <form id="bmiForm" class="bmiForm">
+                <h2>BMI Calculator</h2>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter Your Weight" required>
+        
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter your height" required>
+        
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        
+                <p id="result"></p>
+            </form>
+            </div>
+            </section>
+        </div>
+    
+      <section id="services">
+        <div class="fade-in">
+            <h2>Services</h2>
+            <div class="services" id="servicesContainer">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="fade-in">
+          <h2>Gallery</h2>
+          <div class="gallery">
+            <img src="./img/image.jpg" alt="Gallery" srcset="">
+            <img src="./img/image1.jpg" alt="Gallery" srcset="">
+            <img src="./img/image2.jpg" alt="Gallery" srcset="">
+            <img src="./img/image3.jpg" alt="Gallery" srcset="">
+            <img src="./img/image4.jpg" alt="Gallery" srcset="">
+            <img src="./img/image5.jpg" alt="Gallery" srcset="">
+          </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="fade-in">
+          <h2>Contact Us</h2>
+          <form id="contactForm" class="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+    
+            <button type="button" onclick="sendEmail()">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+        <p>Allrights Reserved &copy;2024</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
